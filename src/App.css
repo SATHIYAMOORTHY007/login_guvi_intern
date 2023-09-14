@@ -102,15 +102,18 @@ button{
 
 
 @media only screen and (max-width: 600px) {
+  *{
+    width: 360px;
+  }
   form{
     height: 520px;
-    width: 320px;
+    width: 360px;
     margin: 0% auto;
   
 }
 form h3{
   font-size: 32px;
- 
+  text-align: center;
 }
 input{
   display: block;
