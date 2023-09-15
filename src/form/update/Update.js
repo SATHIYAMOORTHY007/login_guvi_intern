@@ -17,7 +17,7 @@ function Update() {
   let getData = async () => {
     /* get user date  */
     let user = await axios.get(
-      `http://localhost:4000/api/auth/getuser/${param.id}`,
+      `https://guvi-intern-back.onrender.com/api/auth/getuser/${param.id}`,
     )
     console.log(user.data.message)
     setName(user.data.message.name)
@@ -68,7 +68,7 @@ function Update() {
 
     /* updated user input */
     let userUpadte = await axios.post(
-      `http://localhost:4000/api/auth/updateuser/${param.id}`,
+      `https://guvi-intern-back.onrender.com/api/auth/updateuser/${param.id}`,
       data,
     )
 

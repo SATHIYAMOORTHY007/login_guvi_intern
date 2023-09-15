@@ -34,7 +34,7 @@ function Register() {
     onSubmit: async (values) => {
       try {
         let userReg = await axios.post(
-          'http://localhost:4000/api/auth/register',
+          'https://guvi-intern-back.onrender.com/api/auth/register',
           values,
         )
         alert('success')
