@@ -54,7 +54,7 @@ function Update() {
     data.date = date
     console.log(date)
     if (phone) {
-      if (!/^\+?[1-9][0-9]{7,14}$/i.test(phone)) {
+      if (!/^\+?[1-9][0-9]{9,11}$/i.test(phone)) {
         return alert('Invalid phone number')
       }
     }
@@ -101,7 +101,7 @@ function Update() {
         {/* phoneno password */}
 
         <input
-          type="phoneno"
+          type="tel"
           placeholder="Phone No"
           id="phoneno"
           value={phone}
