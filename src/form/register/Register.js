@@ -42,6 +42,8 @@ function Register() {
       } catch (err) {
         if (err.response.status === 401) {
           alert('already register')
+        } else {
+          alert('contact admin')
         }
       }
     },
