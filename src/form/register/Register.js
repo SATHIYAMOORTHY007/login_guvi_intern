@@ -40,7 +40,9 @@ function Register() {
         alert('success')
         nav('/')
       } catch (err) {
-        alert(err)
+        if (err.response.status === 401) {
+          alert('already register')
+        }
       }
     },
   })
