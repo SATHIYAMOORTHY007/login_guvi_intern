@@ -70,7 +70,7 @@ function Login() {
         <span>{myformik.errors.password}</span>
         <div className="Link">
           <h3>
-            <Link to="/register">Register</Link>
+            <Link to="/register" className="Link-btn">Register</Link>
           </h3>
         </div>
         <button type="submit">Log In</button>

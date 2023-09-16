@@ -67,3 +67,26 @@ span{
     background: rgb(171, 12, 3);
 }
 
+@media only screen and (max-width: 600px) {
+ form{
+    width:15rem;
+    
+ }
+ form h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2rem;
+    text-align: center;
+
+}
+input,select,option,button{
+   font-size: 1rem;
+}
+span{
+    font-size: 1rem;
+    color:red;
+}
+.Link-btn{
+    font-size: 1rem;
+}
+}
